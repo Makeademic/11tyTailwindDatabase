@@ -1,0 +1,8 @@
+---
+permalink: "/assets/js/filter_database.js"
+---
+{% set js %}
+{% include "../assets/js/filter_database.js" %}
+{% endset %}
+{{ js | minifyJs | safe }}
+

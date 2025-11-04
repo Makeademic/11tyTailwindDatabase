@@ -21,11 +21,11 @@ keybindings: []
     <header class="mb-14">
         <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3">{{ title }}</h1>
         <h2 class="text-2xl text-center leading-normal text-gray-750 mt-0 mb-3">Author: {{ author }}</h2>
-        {% if keymapImage %}
-            <a href="{{ keymapImage | url }}">
+        {% if databaseImage %}
+            <a href="{{ databaseImage | url }}">
             <img
             class="w-full m-0 rounded-t lazy"
-            src="{% if keymapImage %}{{ keymapImage | url }}{% elif image %}{{ image | url }}{% else %}{{ '/assets/img/no-image.svg' | url }}{% endif %}"
+            src="{% if databaseImage %}{{ databaseImage | url }}{% elif image %}{{ image | url }}{% else %}{{ '/assets/img/no-image.svg' | url }}{% endif %}"
             width="960"
             height="500"
             alt="{{ imageAlt }}">
@@ -70,7 +70,7 @@ keybindings: []
                 <td>Firmware(s)</td>
                 <td>{{ showCategoricalArray(firmwares, "N/A") }}</td>
             </tr>
-            <th colspan="2" class="text-xl font-bold">Keymap</th>
+            <th colspan="2" class="text-xl font-bold">database</th>
             <tr>
                 <td>Base Layout(s)</td>
                 <td>{{ showCategoricalArray(baseLayouts, "N/A") }}</td>
@@ -120,9 +120,9 @@ keybindings: []
             <tbody class="break-words">
                 <th colspan="2" class="text-xl font-bold">Links</th>
                 <tr>
-                    <td>Keymap Folder</td>
-                    {% if keymapUrl %}
-                        <td><a href="{{ keymapUrl }}">{{ keymapUrl | replace('/', '<wbr>/') | safe }}</a></td>
+                    <td>database Folder</td>
+                    {% if databaseUrl %}
+                        <td><a href="{{ databaseUrl }}">{{ databaseUrl | replace('/', '<wbr>/') | safe }}</a></td>
                     {% else %}
                         <td>N/A</td>
                     {% endif %}

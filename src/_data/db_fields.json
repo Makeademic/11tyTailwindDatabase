@@ -1,8 +1,8 @@
 [
     "title",
-    "keymapUrl",
+    "databaseUrl",
     "author",
-    "keymapImage",
+    "databaseImage",
     "keyCount",
     "firmwares",
     "keyboard",

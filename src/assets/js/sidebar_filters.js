@@ -127,7 +127,7 @@ function syncSidebarFilters() {
                         element.selectedIndex = 0;
                         urlSearchParams.delete(fieldName)
                         history.pushState({}, "", "{{ '/' | url }}" + "?" + urlSearchParams);
-                        populatePostGrid(getFilteredKeymaps());
+                        populatePostGrid(getFiltereddatabase());
                     }
                 }
             } else if (element instanceof HTMLInputElement && element.type === "text") {
@@ -141,7 +141,7 @@ function syncSidebarFilters() {
 }
 
 window.onload = function() {
-    /* Resetting the keymap filters in the sidebar because in case
+    /* Resetting the database filters in the sidebar because in case
      * of a discrepancy between what the sidebar says and what the URL
      * says, the URL rules.
      */
@@ -151,34 +151,34 @@ window.onload = function() {
 };
 
 function resetSidebarFilters(resetUrl) {
-    const keymapFilters = document.getElementsByClassName("keymap-filter");
-    for (const keymapFilter of keymapFilters) {
-        if (isCheckable(keymapFilter)) {
-            keymapFilter.checked = false;
-        } else if ("noUiSlider" in keymapFilter) {
-            const slider = keymapFilter.noUiSlider;
+    const databaseFilters = document.getElementsByClassName("database-filter");
+    for (const databaseFilter of databaseFilters) {
+        if (isCheckable(databaseFilter)) {
+            databaseFilter.checked = false;
+        } else if ("noUiSlider" in databaseFilter) {
+            const slider = databaseFilter.noUiSlider;
             slider.set(slider.options.start);
-        } else if (keymapFilter instanceof HTMLSelectElement) {
-            if (keymapFilter.multiple) {
-                const options = keymapFilter.options;
+        } else if (databaseFilter instanceof HTMLSelectElement) {
+            if (databaseFilter.multiple) {
+                const options = databaseFilter.options;
                 for (const option of options) {
                     option.selected = false;
                 }
             } else {
-                keymapFilter.selectedIndex = 0;
+                databaseFilter.selectedIndex = 0;
             }
         }
     }
     if (resetUrl){
         // Remove filters from the URL
         history.pushState({}, "", location.pathname);
-        getKeymapsJSON().then(filteredKeymaps => populatePostGrid(filteredKeymaps));
+        getdatabaseJSON().then(filtereddatabase => populatePostGrid(filtereddatabase));
     }
 }
 
 function updatePostGrid(element) {
     updateUrlSearchParams(element);
-    getFilteredKeymaps().then(filteredKeymaps => populatePostGrid(filteredKeymaps));
+    getFiltereddatabase().then(filtereddatabase => populatePostGrid(filtereddatabase));
 }
 
 function toggleFullScreenSidebar() {

@@ -18,10 +18,10 @@ jobs:
       id: check-broken-links
       uses: ScholliYT/Broken-Links-Crawler-Action@v3.3.1
       with:
-        website_url: "https://keymapdb.com"
+        website_url: "https://db.com"
         exclude_url_prefix: "/assets,https://mechdb.net"
         max_retries: 2
-        # The crawler stops going deeper once it leaves the keymapdb domain 
+        # The crawler stops going deeper once it leaves the db domain 
         # so it won't accidentally crawl the whole web even if you put -1.
         max_depth: -1 
         verbose: true

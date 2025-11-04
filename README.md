@@ -1,6 +1,6 @@
 <h1>11ty + Tailwind CSS Database</h1>
 
-This online and open-source database template is based on precondition's Keymap Database https://keymapdb.com.
+This online and open-source database template is based on precondition's database Database https://db.com.
 
 ## How Is It Organized?
 
@@ -21,7 +21,7 @@ _includes has
 icons folder has 3 svgs
 layouts folder has 
 default.njk  has default HTML
-keymapdb_entry.njk creates HTML for each database entry
+db_entry.njk creates HTML for each database entry
 
 macros folder has
 boolean_to_yes_no.njk
@@ -32,7 +32,7 @@ partials folder has
 disqus.njk
 footer.njk copyleft note
 header.njk has logo, nav menu, search, menu toggle at small size
-keymaps_metadata.json.njk has database metadata
+database_metadata.json.njk has database metadata
 paginator.njk has previous and next buttons
 post_grid.njk has postcard content and styling
 sidebar.njk has all of the data fieldsets 
@@ -44,7 +44,7 @@ main.css
 mouislider.css
 
 img has
-keymaps has
+database has
 most of the database images (.png)
 
 apple-touch-icon.png
@@ -55,7 +55,7 @@ no-image.svg
 js has
 card.js has card styling
 dual_sliders_conf.js (can we delete?)
-filter_keymaps.js ( do we need to edit or delete? )
+filter_database.js ( do we need to edit or delete? )
 main.js has hide header on scroll down and toggle menu hamburger on small screen
 
 svg has
@@ -69,14 +69,14 @@ Windows.svg
 misc has
 bundle_extras.js.njk
 bundle.js.njk
-filter_keymaps.js.njk
-keymaps_metadata.json.njk
+filter_database.js.njk
+database_metadata.json.njk
 misc.11tydata.js
 robots.txt.njk
 sitemap.xml.njk
 
 posts has
-keymaps has 
+database has 
 all the markdown files have database fields : values
 
 404.njk has page not found message
