@@ -57,16 +57,16 @@
     <link rel="canonical" href="{{ page.url }}">
     <link rel="shortcut icon" type="image/svg+xml" href="{{ site.logo }}" sizes="any">
     <link rel="icon" type="image/svg+xml" href="{{ site.logo }}" sizes="any">
-    <link rel="apple-touch-icon" href="{{ 'https://makeademic.github.io/11tyTailwindDatabase/assets/img/apple-touch-icon.png' | url }}">
+    <link rel="apple-touch-icon" href="{{ '/img/apple-touch-icon.png' | url }}">
     {#<link rel="dns-prefetch" href="https://fonts.googleapis.com">#}
     {#<link rel="preconnect" href="https://fonts.googleapis.com">#}
     {#<link rel="dns-prefetch" href="https://fonts.gstatic.com">#}
     {#<link rel="preconnect" href="https://fonts.gstatic.com">#}
     {#<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">#}
     <link rel="stylesheet" href="{{ 'assets/css/nouislider.css' | url }}">
-    <link rel="stylesheet" href="{{ 'https://makeademic.github.io/11tyTailwindDatabase/assets/css/main.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
     {% if isMainScreen %}
-        <link rel="stylesheet" href="{{ 'https://makeademic.github.io/11tyTailwindDatabase/assets/css/extras.css' | url }}">
+        <link rel="stylesheet" href="{{ 'assets/css/extras.css' | url }}">
     {% endif %}
 
 </head>	
@@ -77,10 +77,10 @@
         {{ content | safe }}
     </main>
     {% include "partials/footer.njk" %}
-    <script src="{{ 'https://makeademic.github.io/11tyTailwindDatabase/assets/js/bundle.js' | url }}"></script>
+    <script src="{{ '/assets/js/bundle.js' | url }}"></script>
     {% if isMainScreen %}
-        <script src="{{ 'https://makeademic.github.io/11tyTailwindDatabase/assets/js/filter_database.js' | url}}"></script>
-        <script src="{{ 'https://makeademic.github.io/11tyTailwindDatabase/assets/js/bundle_extras.js' | url }}"></script>
+        <script src="{{ '/assets/js/filter_database.js' | url}}"></script>
+        <script src="{{ '/assets/js/bundle_extras.js' | url }}"></script>
     {% endif %}
 </body>
 

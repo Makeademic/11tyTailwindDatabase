@@ -55,7 +55,7 @@ module.exports = (config) => {
       input: 'src',
       output: 'dist'
     },
-    pathPrefix: "/",
+    pathPrefix: "/11tyTailwindDatabase/",
     templateFormats: ['md', 'njk', 'html'],
     dataTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk'
