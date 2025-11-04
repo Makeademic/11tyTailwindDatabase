@@ -6,7 +6,7 @@ Prefer the GitHub username when many aliases are possibles.
 ### Possible Values
 - dustypomerleau 
 - "alvaro-prieto" 
-- precondition
+- Makeademic
 
 ## baseLayouts (array[categorical])
 An array of all the base alpha layouts that the database offers. Ordered in the same way as in the database.
@@ -37,7 +37,7 @@ Software mappings are also allowed here, e.g. "kanata", "Karabiner-Elements", or
 ## hasHomeRowMods (bool)
 Indicates whether the database uses home row mods.
 
-Among [alternatives to home row mods](https://precondition.github.io/home-row-mods#alternatives), only [alternative layouts](https://precondition.github.io/home-row-mods#alternative-home-row-mods-layout) also pass this filter. All the rest (callum-style mods, upper row mods, ...) would result in `hasHomeRowMods` = false.
+Among [alternatives to home row mods](https://Makeademic.github.io/home-row-mods#alternatives), only [alternative layouts](https://Makeademic.github.io/home-row-mods#alternative-home-row-mods-layout) also pass this filter. All the rest (callum-style mods, upper row mods, ...) would result in `hasHomeRowMods` = false.
 
 If there are at least four mod-taps on the home row, `hasHomeRowMods` should be set to true.
 
@@ -166,7 +166,7 @@ Examples:
 
 ### Possible Values
 - "https://i.ibb.co/RQZx2dY/default-kyria2.jpg"
-- precondition.jpg
+- Makeademic.jpg
 
 ## databaseUrl (string)
 The link to the database *folder* files.
@@ -174,7 +174,7 @@ The link to the database *folder* files.
 ### Possible Values
 - "https://github.com/qmk/qmk_firmware/tree/master/keyboards/minidox/database/dustypomerleau" 
 - "https://github.com/alvaro-prieto/corne" 
-- https://github.com/precondition/dactyl-manuform-database/
+- https://github.com/Makeademic/dactyl-manuform-database/
 
 ## languages (array[categorical])
 The (natural) languages this database is designed to be used in. The first language in the array is the main language.
@@ -242,7 +242,7 @@ Most database don't have an actual name like "Seniply", "Miryoku" or "T-34" so i
 
 ### Possible Values
 - Miryoku
-- precondition's database for the Dactyl Manuform 5x6
+- Makeademic's database for the Dactyl Manuform 5x6
 - rafaelromao's keyboard layout
 
 ## writeup (string)

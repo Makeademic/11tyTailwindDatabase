@@ -1,6 +1,6 @@
 <h1>11ty + Tailwind CSS Database</h1>
 
-This online and open-source database template is based on precondition's database Database https://db.com.
+This online and open-source database template is based on Makeademic's database Database https://db.com.
 
 ## How Is It Organized?
 

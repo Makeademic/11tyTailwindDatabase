@@ -1,5 +1,5 @@
 {
-	"name": "db",
+	"name": "11tyTailwindDatabase",
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
@@ -12,14 +12,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/precondition/db.git"
+		"url": "git+https://github.com/Makeademic/11tyTailwindDatabase.git"
 	},
-	"author": "Vladislav K.",
+	"author": "Makeademic",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/precondition/db/issues"
+		"url": "https://github.com/Makeademic/11tyTailwindDatabase/issues"
 	},
-	"homepage": "https://github.com/precondition/db#readme",
+	"homepage": "https://github.com/Makeademic/11tyTailwindDatabase#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^1.0.0",
 		"@tailwindcss/typography": "^0.3.1",
