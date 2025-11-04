@@ -6,7 +6,7 @@
         "title": "UT47 Nordic database",
         "databaseUrl": "https://github.com/qmk/qmk_firmware/tree/user-database-still-present/keyboards/40percentclub/ut47/database/nordic",
         "author": "NeonSpork",
-        "databaseImage": "NeonSpork.png",
+        "databaseImage": "/assets/img/database/NeonSpork.png",
         "keyCount": 47,
         "firmwares": ["QMK"],
         "keyboard": "UT47",
