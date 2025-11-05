@@ -1,6 +1,34 @@
 [
     {
 
+        "url": "/11tyTailwindDatabase/database/TurtleReadingBook/",
+        "fileSlug": "TurtleReadingBook",
+        "title": "Turtle Reading Book",
+        "databaseUrl": "https://basira.library.upenn.edu/documents/3536",
+        "author": "Hieronymus Bosch",
+        "databaseImage": "/assets/img/database/TurtleReadingBook.jpg",
+        "keyCount": 47,
+        "firmwares": ["QMK"],
+        "keyboard": "UT47",
+        "baseLayouts": ["QWERTY"],
+        "stagger": "row",
+        "isSplit": false,
+        "languages": ["English","Danish","Norwegian"],
+        "summary": "Turtle Reading Book",
+        "OS": ["Windows"],
+        "keybindings": ["Gaming"],
+        "writeup": null,
+        "hasRotaryEncoder": false,
+        "hasLetterOnThumb": false,
+        "layerCount": 6,
+        "hasHomeRowMods": false,
+        "isTapDanceEnabled": false,
+        "isComboEnabled": false,
+        "isAutoShiftEnabled": false
+        
+    },
+    {
+
         "url": "/11tyTailwindDatabase/database/NeonSpork/",
         "fileSlug": "NeonSpork",
         "title": "UT47 Nordic database",
