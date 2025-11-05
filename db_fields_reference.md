@@ -20,19 +20,16 @@ It's not rare to come across a database that has multiple base layouts hence the
 - [AZERTY]
 - ["BEAKL"]
 
-## firmwares (array[categorical])
-The keyboard firmwares the database is made for.
-
-Oryx, Via and Vial firmwares all fall under the "QMK" umbrella.
-
-Software mappings are also allowed here, e.g. "kanata", "Karabiner-Elements", or "keyd". You can list more than one.
+## documentFormat (array[categorical])
+Document Format
 
 ### Possible Values
-- [QMK]
-- [ZMK]
-- [KMonad]
-- [QMK, ZMK]
-- [kanata, Karabiner-Elements]
+- [Codex/Book]
+- [Scroll/Roll]
+- [Single-Sheet-Document]
+- [Tablet]
+- [Hornbook]
+- [Other]
 
 ## hasHomeRowMods (bool)
 Indicates whether the database uses home row mods.
