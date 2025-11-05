@@ -8,7 +8,7 @@ databaseImage: TurtleReadingBook.jpg
 databaseUrl: https://basira.library.upenn.edu/documents/3536
 author: Hieronymus Bosch
 baseLayouts: [QWERTY]
-documentFormat: [Codex/Book]
+documentFormat: [Codex]
 hasHomeRowMods: false
 hasLetterOnThumb: false
 hasRotaryEncoder: false

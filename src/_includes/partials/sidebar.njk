@@ -15,7 +15,7 @@
         {% for documentFormatName in collections.posts | mapToDbField("documentFormat") | flatten | sort | uniq %}
         <div class="inline-flex mt-3">
             <input type="radio"
-                   name="documentFormatName"
+                   name="documentFormat"
                    value="{{ documentFormatName }}"
                    id="{{ documentFormatName }}-radio"
                    onclick="updatePostGrid(this)"

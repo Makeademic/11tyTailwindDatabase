@@ -1,7 +1,7 @@
 ---
 author: NeonSpork
 baseLayouts: [QWERTY]
-documentFormat: [Scroll/Roll]
+documentFormat: [Scroll]
 hasHomeRowMods: false
 hasLetterOnThumb: false
 hasRotaryEncoder: false
