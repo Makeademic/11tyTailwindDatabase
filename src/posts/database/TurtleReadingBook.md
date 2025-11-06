@@ -7,7 +7,7 @@ artist: Hieronymus Bosch
 databaseImage: TurtleReadingBook.jpg
 databaseUrl: https://basira.library.upenn.edu/documents/3536
 author: Hieronymus Bosch
-baseLayouts: [QWERTY]
+baseLayouts: [Boards]
 documentFormat: [Codex]
 hasHomeRowMods: false
 hasLetterOnThumb: false
