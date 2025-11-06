@@ -22,7 +22,7 @@ keyCount: 47
 languages: [English, Danish, Norwegian]
 layerCount: 6
 OS: [Windows]
-stagger: row
+textblockBindingRelationship: Indeterminate
 summary: "Turtle Reading Book"
 writeup: 
 ---

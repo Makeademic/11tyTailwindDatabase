@@ -207,15 +207,13 @@ The operating system(s) used by the database author, sorted in descending order 
 - ["Linux"]
 - ["Windows", "Android"]
 
-## stagger (categorical)
-The keyboard stagger for which the database is designed around. The effort grid can change from one stagger to another and so will an optimized database.
-
-It must be all lowercase.
+## textblockBindingRelationship (categorical)
+The relationship of the textblock to the binding
 
 ### Possible Values
-- row
-- columnar
-- ortholinear
+- Squares
+- Indeterminate
+- Flush
 
 ## summary (string or array[string])
 Short summary (max. 60 words) of the database to show in the card, below the picture.

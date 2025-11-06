@@ -7,7 +7,7 @@
     "documentFormat",
     "keyboard",
     "bindingType",
-    "stagger",
+    "textblockBindingRelationship",
     "isSplit",
     "languages",
     "summary",
