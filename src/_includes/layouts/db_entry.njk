@@ -11,10 +11,10 @@ keybindings: []
 {% from "macros/boolean_to_yes_no.njk" import booleanToYesNo %}
 {% from "macros/show_categorical_array.njk" import showCategoricalArray %}
 
-{% if isSplit %}
-    {% set splitStatus = "Split" %}
+{% if endbandPresent %}
+    {% set endbandStatus = "EndbandPresent" %}
 {% else %}
-    {% set splitStatus = "Non-split" %}
+    {% set endbandStatus = "EndbandAbsent" %}
 {% endif %}
 
 <article class="max-w-5xl mx-auto">
@@ -59,8 +59,8 @@ keybindings: []
                 <td>{{ keyCount }}</td>
             </tr>
             <tr>
-                <td>Split</td>
-                <td>{{ booleanToYesNo(isSplit) }}</td>
+                <td>Endband Present</td>
+                <td>{{ booleanToYesNo(endbandPresent) }}</td>
             </tr>
             <tr>
                 <td>Rotary Encoder(s)</td>

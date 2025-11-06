@@ -7,7 +7,7 @@ async function getSVG(fieldName, fieldValue) {
 }
 
 function card(post, postUrl) {
-  const splitStatus = post.isSplit ? "Split" : "Non-split"
+  const endbandStatus = post.endbandPresent ? "Endband Present" : "Endband Absent"
   const titleHover = post.title.toLowerCase().includes(post.author.toLowerCase()) ? '' : `title="by ${post.author}"`;
   let summary = "";
   if (Array.isArray(post.summary)) {
@@ -28,7 +28,7 @@ function card(post, postUrl) {
           src="${post.databaseImage}"
           width="960"
           height="500"
-          alt="${splitStatus} ${post.textblockBindingRelationship}-staggered ${post.keyboard} with ${oxfordJoin(post.bindingType)} legends">
+          alt="${endbandStatus} ${post.textblockBindingRelationship}-staggered ${post.keyboard} with ${oxfordJoin(post.bindingType)} legends">
           </a>
           <div class="px-6 py-5">
               <div class="font-semibold text-lg mb-2">

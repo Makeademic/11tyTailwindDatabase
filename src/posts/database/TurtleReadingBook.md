@@ -14,7 +14,7 @@ hasLetterOnThumb: false
 hasRotaryEncoder: false
 isAutoShiftEnabled: false
 isComboEnabled: false
-isSplit: false
+endbandPresent: false
 isTapDanceEnabled: false
 keybindings: [Gaming]
 keyboard: UT47
@@ -22,7 +22,7 @@ keyCount: 47
 languages: [English, Danish, Norwegian]
 layerCount: 6
 OS: [Windows]
-textblockBindingRelationship: Indeterminate
+textblockBindingRelationship: Squares
 summary: "Turtle Reading Book"
 writeup: 
 ---
