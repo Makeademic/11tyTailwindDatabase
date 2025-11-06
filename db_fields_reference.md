@@ -8,17 +8,15 @@ Prefer the GitHub username when many aliases are possibles.
 - "alvaro-prieto" 
 - Makeademic
 
-## baseLayouts (array[categorical])
-An array of all the base alpha layouts that the database offers. Ordered in the same way as in the database.
+## bindingType (array[categorical])
+An array of all the binding types.
 
-IMPORTANT: Only layout families are accepted. US QWERTY, ES QWERTY, and UK QWERTY all fall under the same family of "QWERTY" for example. Same thing for Vanilla Colemak, Colemak-DH, Colemaq etc. which are all variations of the Colemak family (Workman is its own family). Notably, QWERTZ and AZERTY are separate from QWERTY.
-
-It's not rare to come across a database that has multiple base layouts hence the use of an array for the data type. However, if the main base layer of a database is Dvorak and it implements a QWERTY gaming layer, that doesn't mean QWERTY gets added to the array. Especially so, if it shifts QWERTY to the right to make WASD more comfortable on columnar stagger boards.
+Boards, Limp binding, Indeterminate, Chemise, Other, Girdle, Greek style, Part Cover, Tacketed/ longstitch, Treasure.
 
 ### Possible Values
-- ["Colemak", "QWERTY"]
-- [AZERTY]
-- ["BEAKL"]
+- ["Other", "Indeterminate"]
+- [Boards]
+- ["Limp binding"]
 
 ## documentFormat (array[categorical])
 Document Format

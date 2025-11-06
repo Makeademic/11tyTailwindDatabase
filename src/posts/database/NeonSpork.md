@@ -1,6 +1,6 @@
 ---
 author: NeonSpork
-baseLayouts: [QWERTY]
+bindingType: ["Limp binding"]
 documentFormat: [Scroll]
 hasHomeRowMods: false
 hasLetterOnThumb: false

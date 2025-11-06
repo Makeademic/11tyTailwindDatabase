@@ -6,7 +6,7 @@
     "keyCount",
     "documentFormat",
     "keyboard",
-    "baseLayouts",
+    "bindingType",
     "stagger",
     "isSplit",
     "languages",

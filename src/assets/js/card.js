@@ -28,7 +28,7 @@ function card(post, postUrl) {
           src="${post.databaseImage}"
           width="960"
           height="500"
-          alt="${splitStatus} ${post.stagger}-staggered ${post.keyboard} with ${oxfordJoin(post.baseLayouts)} legends">
+          alt="${splitStatus} ${post.stagger}-staggered ${post.keyboard} with ${oxfordJoin(post.bindingType)} legends">
           </a>
           <div class="px-6 py-5">
               <div class="font-semibold text-lg mb-2">
@@ -39,7 +39,7 @@ function card(post, postUrl) {
                   <p id="languages-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.languages.join(", ") || "N/A"}</p>
                   <div class="flexitems-break"></div>
                   <p id="layerCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.layerCount} layers</p>
-                  <p id="baseLayouts-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.baseLayouts.join(", ") || "N/A"}</p>
+                  <p id="bindingType-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.bindingType.join(", ") || "N/A"}</p>
               </div>
               ${summary}
           </div>
