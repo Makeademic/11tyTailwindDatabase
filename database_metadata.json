@@ -10,7 +10,7 @@
         "keyCount": 47,
         "documentFormat": ["Codex"],
         "keyboard": "UT47",
-        "baseLayouts": ["QWERTY"],
+        "baseLayouts": ["Boards"],
         "stagger": "row",
         "isSplit": false,
         "languages": ["English","Danish","Norwegian"],
