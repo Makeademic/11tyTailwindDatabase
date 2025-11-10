@@ -179,20 +179,14 @@ See the "ISO language name" column in the [list of ISO 639-1 codes](https://en.w
 - [Japanese, English]
 - ["Russian", "English", "Greek", "Spanish"]
 
-## layerCount (integer)
-The amount of layers in the database.
-
-For ease of use, the layer count slider is currently capped at 16 layers but if need be, layerCount can go up to 32 layers.
-
-When a variable amount of layers is available in a database, enter the minimum amount of layers.
-
-This has to reflect the actual amount of non-empty layers defined in the firmware, not just the amount of layers you use in a typical day. To give an example, if you've defined an “adjust/misc.“ layer containing only keycodes to change the RGB light settings and one keycode to put the keyboard in bootloader mode, you must count that layer as well.
+## documentCount (integer)
+Number of documents
 
 ### Possible Values
 - 1 (min)
 - 8
 - 16
-- 32 (max)
+- 65 (max)
 
 ## OS (array[categorical])
 The operating system(s) used by the database author, sorted in descending order of usage.

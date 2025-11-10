@@ -15,7 +15,7 @@ keyCount: 47
 databaseImage: NeonSpork.png
 databaseUrl: https://github.com/qmk/qmk_firmware/tree/user-database-still-present/keyboards/40percentclub/ut47/database/nordic
 languages: [English, Danish, Norwegian]
-layerCount: 6
+documentCount: 6
 OS: [Windows]
 textblockBindingRelationship: Indeterminate
 summary: "Neon Spork: Chose to modify the default layout to include dedicated arrows on the bottom right. Layers 1-4 are modifiers, layer 5 is a toggle on gaming mode. Tab is dual function: Tap for Tab and hold for L3. So is enter: tap for Enter and hold for Right shift."

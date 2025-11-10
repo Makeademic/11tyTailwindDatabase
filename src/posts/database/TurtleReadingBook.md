@@ -20,7 +20,7 @@ keybindings: [Gaming]
 keyboard: UT47
 keyCount: 47
 languages: [English, Danish, Norwegian]
-layerCount: 6
+documentCount: 4
 OS: [Windows]
 textblockBindingRelationship: Squares
 summary: "Turtle Reading Book"

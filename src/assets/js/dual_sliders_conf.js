@@ -1,5 +1,5 @@
 let keyCountSlider = $('keyCountSlider');
-let layerCountSlider = $('layerCountSlider');
+let documentCountSlider = $('documentCountSlider');
 
 const MAX_KEY_COUNT = 90;
 const keyCountPipsStep = 15;
@@ -46,17 +46,17 @@ keyCountSlider.noUiSlider.on("change",
  *
  * EDIT: 32-layer database found! See posts/database/rafaelromao.md @ PR#66
  */
-const MAX_LAYER_COUNT = 32;
-const layerCountPipsStep = 4;
-let layerCountPips = [1]
-for (let v = layerCountPipsStep; v <= MAX_LAYER_COUNT ; v += layerCountPipsStep) {
-    layerCountPips.push(v);
+const MAX_DOCUMENT_COUNT = 65;
+const documentCountPipsStep = 5;
+let documentCountPips = [1]
+for (let v = documentCountPipsStep; v <= MAX_DOCUMENT_COUNT ; v += documentCountPipsStep) {
+    documentCountPips.push(v);
 }
 
-layerCountSlider.innerHTML = ""
-layerCountSlider.classList.add("slider-styled");
-noUiSlider.create(layerCountSlider, {
-    start: [1, MAX_LAYER_COUNT],
+documentCountSlider.innerHTML = ""
+documentCountSlider.classList.add("slider-styled");
+noUiSlider.create(documentCountSlider, {
+    start: [1, MAX_DOCUMENT_COUNT],
     connect: true,
     step: 1,
     tooltips: true,
@@ -66,22 +66,22 @@ noUiSlider.create(layerCountSlider, {
     },
     pips: {
         mode: 'values',
-        values: layerCountPips,
+        values: documentCountPips,
         density: 7,
     },
     range: {
         'min': 1,
-        'max': MAX_LAYER_COUNT,
+        'max': MAX_DOCUMENT_COUNT,
     },
     handleAttributes: [
-        {"aria-label": "Minimum layer count"},
-        {"aria-label": "Maximum layer count"}
+        {"aria-label": "Minimum document count"},
+        {"aria-label": "Maximum document count"}
     ]
 });
 
 // Ignore all parameters passed to the callback
-layerCountSlider.noUiSlider.on("change",
-    noUiSliderCallbackArgs => updatePostGrid(layerCountSlider));
+documentCountSlider.noUiSlider.on("change",
+    noUiSliderCallbackArgs => updatePostGrid(documentCountSlider));
 
 
 // Source: https://refreshless.com/nouislider/examples/#section-merging-tooltips
@@ -171,4 +171,4 @@ function mergeTooltips(slider, threshold, separator) {
 // Not an ASCII hyphen, the separator is an en-dash
 //<–> 8211, Hex 2013, Oct 20023, Digr -N
 mergeTooltips(keyCountSlider, 15, '–');
-mergeTooltips(layerCountSlider, 15, '–');
+mergeTooltips(documentCountSlider, 15, '–');

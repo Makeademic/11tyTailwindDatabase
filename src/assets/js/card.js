@@ -38,7 +38,7 @@ function card(post, postUrl) {
                   <p id="keyCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.keyCount} keys</p>
                   <p id="languages-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.languages.join(", ") || "N/A"}</p>
                   <div class="flexitems-break"></div>
-                  <p id="layerCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.layerCount} layers</p>
+                  <p id="documentCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.documentCount} documents</p>
                   <p id="bindingType-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.bindingType.join(", ") || "N/A"}</p>
               </div>
               ${summary}
