@@ -47,7 +47,7 @@ keyCountSlider.noUiSlider.on("change",
  * EDIT: 32-layer database found! See posts/database/rafaelromao.md @ PR#66
  */
 const MAX_DOCUMENT_COUNT = 65;
-const documentCountPipsStep = 5;
+const documentCountPipsStep = 15;
 let documentCountPips = [1]
 for (let v = documentCountPipsStep; v <= MAX_DOCUMENT_COUNT ; v += documentCountPipsStep) {
     documentCountPips.push(v);
