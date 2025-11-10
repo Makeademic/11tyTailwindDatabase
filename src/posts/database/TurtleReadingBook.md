@@ -19,7 +19,7 @@ isTapDanceEnabled: false
 keybindings: [Gaming]
 keyboard: UT47
 keyCount: 47
-languages: [English, Danish, Norwegian]
+subjects: ["religion and mythology"]
 documentCount: 4
 OS: [Windows]
 textblockBindingRelationship: Squares

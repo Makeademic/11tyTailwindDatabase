@@ -167,17 +167,13 @@ The link to the database *folder* files.
 - "https://github.com/alvaro-prieto/corne" 
 - https://github.com/Makeademic/dactyl-manuform-database/
 
-## languages (array[categorical])
-The (natural) languages this database is designed to be used in. The first language in the array is the main language.
-
-Don't associate a region to the language e.g. don't use "English US" and "English UK" or "French FR" and "French BE", use just "English" and just "French". 
-
-See the "ISO language name" column in the [list of ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for a complete list of allowed values.
+## subjects (array[categorical])
+General Subjects
 
 ### Possible Values
-- ["English", "French"]
-- [Japanese, English]
-- ["Russian", "English", "Greek", "Spanish"]
+- ["religion and mythology", "history and legend"]
+- [Portrait, allegory]
+- ["still life", "kings, queens, rulers", "landscape", "Architecture"]
 
 ## documentCount (integer)
 Number of documents

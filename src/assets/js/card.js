@@ -36,7 +36,7 @@ function card(post, postUrl) {
               </div>
               <div class="my-5 flex flex-wrap justify-between">
                   <p id="keyCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.keyCount} keys</p>
-                  <p id="languages-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.languages.join(", ") || "N/A"}</p>
+                  <p id="subjects-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.subjects.join(", ") || "N/A"}</p>
                   <div class="flexitems-break"></div>
                   <p id="documentCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.documentCount} documents</p>
                   <p id="bindingType-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.bindingType.join(", ") || "N/A"}</p>
