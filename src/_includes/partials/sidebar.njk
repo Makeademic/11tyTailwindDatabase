@@ -1,6 +1,8 @@
 {% from "macros/yes_no_switch_field.njk" import YesNo %}
 {# NOTE: `database-filter` is not a class used for styling. It is a class used to group together input elements responsible for database-filtering, so that it is easy to iterate over them in JS #}
 
+<h1>Artwork</h1>
+
 <fieldset>
     <legend>Date</legend>
     {# Dummy input used to simply fill in the blank for NoScript users #}
@@ -9,6 +11,31 @@
 </fieldset>
 
 <br>
+
+<fieldset>
+    <legend>Document Count</legend>
+    {# Dummy input used to simply fill in the blank for NoScript users #}
+    <div class="database-filter flex" name="documentCount" id="documentCountSlider">1<input type="range" min="1" max="32" value="32">32</input></div>
+</fieldset>
+
+<br>
+
+<h1>Visual Context</h1>
+
+<fieldset class="block text-left">
+    <legend>General Subject (Ctrl+Click to select more than one)</legend>
+    <select name="subjects" id="subjects-multi-select" onchange="updatePostGrid(this)" class="database-filter form-multiselect block w-full mt-1 border-2"
+        aria-label="Subject selection" multiple>
+       {% for subject in collections.posts | mapToDbField("subjects") | flatten | sort | uniq  %}
+           <option value="{{ subject }}">{{ subject }}</option>
+       {% endfor %}
+     </select>
+</fieldset>
+
+<br>
+
+<h1>Document Details</h1>
+
 
 <fieldset class="flex flex-col">
     <legend>Document Format</legend>
@@ -27,6 +54,9 @@
 </fieldset>
 
 <br>
+
+
+<h1>Document External Features</h1>
 
 <fieldset class="mb-3 xl:w-96">
     <legend class="form-check-label inline-block text-gray-800" id="bindingTypeSelectionLegend">
@@ -55,6 +85,32 @@
 </fieldset>
 
 <br>
+
+<fieldset class="flex flex-col">
+    <legend>Binding Relationship to Text Block</legend>
+    <label class="inline-flex mt-3">
+        <input type="radio" name="textblockBindingRelationship" value="Squares" onclick="updatePostGrid(this)" class="database-filter form-radio h-5 w-5 text-gray-600">
+        <span class="ml-2 text-gray-700">Squares</span>
+    </label>
+
+    <label class="inline-flex mt-3">
+        <input type="radio" name="textblockBindingRelationship" value="Indeterminate" onclick="updatePostGrid(this)" class="database-filter form-radio h-5 w-5 text-gray-600">
+        <span class="ml-2 text-gray-700">Indeterminate</span>
+    </label>
+
+    <label class="inline-flex mt-3">
+        <input type="radio" name="textblockBindingRelationship" value="Flush" onclick="updatePostGrid(this)" class="database-filter form-radio h-5 w-5 text-gray-600">
+        <span class="ml-2 text-gray-700">Flush</span>
+    </label>
+</fieldset>
+
+<br>
+
+{{ YesNo("Endband Present", "endbandPresent") }}
+
+<br>
+
+<h1>Document Internal Features</h1>
 
 <fieldset class="mb-3 xl:w-96">
     <legend class="form-check-label inline-block text-gray-800" id="textTechnologySelectionLegend">
@@ -89,41 +145,9 @@
 
 <br>
 
-<fieldset class="flex flex-col">
-    <legend>Binding Relationship to Text Block</legend>
-    <label class="inline-flex mt-3">
-        <input type="radio" name="textblockBindingRelationship" value="Squares" onclick="updatePostGrid(this)" class="database-filter form-radio h-5 w-5 text-gray-600">
-        <span class="ml-2 text-gray-700">Squares</span>
-    </label>
+<h1>Document Actions</h1>
 
-    <label class="inline-flex mt-3">
-        <input type="radio" name="textblockBindingRelationship" value="Indeterminate" onclick="updatePostGrid(this)" class="database-filter form-radio h-5 w-5 text-gray-600">
-        <span class="ml-2 text-gray-700">Indeterminate</span>
-    </label>
 
-    <label class="inline-flex mt-3">
-        <input type="radio" name="textblockBindingRelationship" value="Flush" onclick="updatePostGrid(this)" class="database-filter form-radio h-5 w-5 text-gray-600">
-        <span class="ml-2 text-gray-700">Flush</span>
-    </label>
-</fieldset>
-
-<br>
-
-{{ YesNo("Endband Present", "endbandPresent") }}
-
-<br>
-
-<fieldset class="block text-left">
-    <legend>General Subject (Ctrl+Click to select more than one)</legend>
-    <select name="subjects" id="subjects-multi-select" onchange="updatePostGrid(this)" class="database-filter form-multiselect block w-full mt-1 border-2"
-        aria-label="Subject selection" multiple>
-       {% for subject in collections.posts | mapToDbField("subjects") | flatten | sort | uniq  %}
-           <option value="{{ subject }}">{{ subject }}</option>
-       {% endfor %}
-     </select>
-</fieldset>
-
-<br>
 
 <fieldset class="flex flex-col">
     <legend>OS</legend>
@@ -155,14 +179,6 @@
 <br>
 
 {{ YesNo("Rotary Encoder(s)", "hasRotaryEncoder") }}
-
-<br>
-
-<fieldset>
-    <legend>Document Count</legend>
-    {# Dummy input used to simply fill in the blank for NoScript users #}
-    <div class="database-filter flex" name="documentCount" id="documentCountSlider">1<input type="range" min="1" max="32" value="32">32</input></div>
-</fieldset>
 
 <br>
 
