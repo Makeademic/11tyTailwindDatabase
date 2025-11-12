@@ -20,7 +20,7 @@ keybindings: []
 <article class="max-w-5xl mx-auto">
     <header class="mb-14">
         <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3">{{ title }}</h1>
-        <h2 class="text-2xl text-center leading-normal text-gray-750 mt-0 mb-3">Author: {{ author }}</h2>
+        <h2 class="text-2xl text-center leading-normal text-gray-750 mt-0 mb-3">Artist: {{ author }}</h2>
         {% if databaseImage %}
             <a href="{{ databaseImage | url }}">
             <img
@@ -44,79 +44,90 @@ keybindings: []
                 <p>{{ summary | safe }}</p>
             {%- endif %}
         {% endif %}
+
+
+
+         <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3">External Features</h1>  
+         
+         <br>
+
+
+
         <table>
-            <th colspan="2" class="text-xl font-bold">Document Internal Features</th>
-            <tr>
-                <td>Text Technology</td>
-                <td>{{ textTechnology }}</td>
-            </tr>
-            <tr>
-                <td>Binding Relationship to Text Block</td>
-                <td>{{ textblockBindingRelationship | title }}</td>
-            </tr>
-            <tr>
-                <td>Date</td>
-                <td>{{ yearCount }}</td>
-            </tr>
-            <tr>
-                <td>Endband Present</td>
-                <td>{{ booleanToYesNo(endbandPresent) }}</td>
-            </tr>
-            <tr>
-                <td>Rotary Encoder(s)</td>
-                <td>{{ booleanToYesNo(hasRotaryEncoder) }}</td>
-            </tr>
+            <th colspan="2" class="text-xl font-bold">Binding</th>
             <tr>
                 <td>Document Format</td>
                 <td>{{ showCategoricalArray(documentFormat, "N/A") }}</td>
             </tr>
-            <th colspan="2" class="text-xl font-bold">database</th>
             <tr>
                 <td>Binding Type</td>
                 <td>{{ showCategoricalArray(bindingType, "N/A") }}</td>
             </tr>
             <tr>
-                <td>General Subject</td>
-                <td>{{ showCategoricalArray(subjects, "N/A") }}</td>
-            </tr>
-            <tr>
                 <td>Letter(s) on thumb</td>
                 <td>{{ booleanToYesNo(hasLetterOnThumb) }}</td>
             </tr>
+            <th colspan="2" class="text-xl font-bold">Fore-Edges/Textblock Edges</th>
             <tr>
-                <td>Document Count</td>
-                <td>{{ documentCount }}</td>
+                <td>Binding Relationship to Text Block</td>
+                <td>{{ textblockBindingRelationship | title }}</td>
             </tr>
+            <tr>
+                <td>Rotary Encoder(s)</td>
+                <td>{{ booleanToYesNo(hasRotaryEncoder) }}</td>
+            </tr>
+            
             <tbody>
-                <th colspan="2" class="text-xl font-bold">Document Format</th>
+                <th colspan="2" class="text-xl font-bold">Endband</th>
+            <tr>
+                <td>Endband Present</td>
+                <td>{{ booleanToYesNo(endbandPresent) }}</td>
+            </tr>
+            </tbody>
+            <tbody>
+                <th colspan="2" class="text-xl font-bold">Bookmarks/Registers</th>
                 <tr>
-                    <td>Home Row Mods</td>
-                    <td>{{ booleanToYesNo(hasHomeRowMods) }}</td>
+                    <td>Special Keybinding Schemes</td>
+                    <td>{{ showCategoricalArray(keybindings, "None") }}</td>
                 </tr>
-                <tr>
+            </tbody>
+        </table>
+
+
+
+
+         <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3">Internal Features</h1>  
+
+         <br>
+
+
+        <table>
+            <th colspan="2" class="text-xl font-bold">Layout</th>
+            <tr>
+                <td>Text Technology</td>
+                <td>{{ textTechnology }}</td>
+            </tr>
+            <tr>
                     <td>Combos</td>
                     <td>{{ booleanToYesNo(isComboEnabled) }}</td>
                 </tr>
                 <tr>
                     <td>Tap Dance</td>
                     <td>{{ booleanToYesNo(isTapDanceEnabled) }}</td>
-                </tr>
+            </tr>
+            <th colspan="2" class="text-xl font-bold">Text and Image</th>
+            <tr>
+                
                 <tr>
-                    <td>Auto Shift</td>
-                    <td>{{ booleanToYesNo(isAutoShiftEnabled) }}</td>
+                    <td>Home Row Mods</td>
+                    <td>{{ booleanToYesNo(hasHomeRowMods) }}</td>
                 </tr>
-            </tbody>
-            <tbody>
-                <th colspan="2" class="text-xl font-bold">Use Case</th>
+               
                 <tr>
                     <td>OS</td>
                     <td>{{ showCategoricalArray(OS, "N/A") }}</td>
                 </tr>
-                <tr>
-                    <td>Special Keybinding Schemes</td>
-                    <td>{{ showCategoricalArray(keybindings, "None") }}</td>
-                </tr>
-            </tbody>
+
             <tbody class="break-words">
                 <th colspan="2" class="text-xl font-bold">Links</th>
                 <tr>
@@ -137,5 +148,9 @@ keybindings: []
                 </tr>
             </tbody>
         </table>
+
+
+
+
     </div>
 </article>
