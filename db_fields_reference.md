@@ -1,8 +1,6 @@
-## author (string)
+## artist (string)
 
-The name of the database's author.
-
-Prefer the GitHub username when many aliases are possibles.
+The name of the artist
 
 ### Possible Values
 

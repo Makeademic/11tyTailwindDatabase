@@ -8,7 +8,7 @@ async function getSVG(fieldName, fieldValue) {
 
 function card(post, postUrl) {
   const endbandStatus = post.endbandPresent ? "Endband Present" : "Endband Absent"
-  const titleHover = post.title.toLowerCase().includes(post.author.toLowerCase()) ? '' : `title="by ${post.author}"`;
+  const titleHover = post.title.toLowerCase().includes(post.artist.toLowerCase()) ? '' : `title="by ${post.artist}"`;
   let summary = "";
   if (Array.isArray(post.summary)) {
     summary = '<ul class="list-disc">';
