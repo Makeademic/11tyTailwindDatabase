@@ -129,27 +129,15 @@ TWM stands for Tiling Windows Manager.
 - [Gaming]
 - [] (None of the special keybindings above apply)
 
-## keyboard (categorical)
+## textTechnology (categorical)
 
-The particular keyboard for which this database is designed.
-
-First, check the keyboards drop-down list to see if your keyboard isn't already in the list, in which case you should just copy the existing name.
-
-If your keyboard hasn't been added yet to db, use the keyboard name that makes the most sense. Don't include the manufacturer name or a revision number or the MCU type in the keyboard name unless it's necessary for disambiguation between similarly named keyboards with differing physical keyboard layouts/geometries.
-
-Examples:
-| Correct | Incorrect | Incorrect |
-|---------|-----------|-----------|
-| Kyria | splitkb/kyria | Kyria rev.2 |
-| Atreus | Atreus teensy2 | Keyboardio Atreus |
-
-When a database is compatible with many different keyboards, pick the keyboard that most closely ressembles the database's layout. This will generally be the keyboard with the least amount of keys. People using multiple keyboards with a varying amount of keys share the same database among keyboards and mostly ignore the extra keys.
+Is the internal document a manuscript, printed, or unclear?
 
 ### Possible Values
 
-- Dactyl Manuform 5x6
-- Clueboard 66%
-- Corne
+- Printed with manuscript additions
+- Manuscript
+- Unclear/Indistinct
 
 ## yearCount (integer)
 

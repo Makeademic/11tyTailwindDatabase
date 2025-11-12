@@ -16,7 +16,7 @@ isComboEnabled: false
 endbandPresent: false
 isTapDanceEnabled: false
 keybindings: [Gaming]
-keyboard: UT47
+textTechnology: Manuscript
 yearCount: 1670
 subjects: ["religion and mythology"]
 documentCount: 4

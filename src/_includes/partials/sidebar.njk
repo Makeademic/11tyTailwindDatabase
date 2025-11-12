@@ -57,10 +57,10 @@
 <br>
 
 <fieldset class="mb-3 xl:w-96">
-    <legend class="form-check-label inline-block text-gray-800" id="keyboardSelectionLegend">
-      Keyboard
+    <legend class="form-check-label inline-block text-gray-800" id="textTechnologySelectionLegend">
+      Text Technology
     </legend>
-    <select id="keyboardSelection" name="keyboard" onchange="updatePostGrid(this)" class="database-filter form-select
+    <select id="textTechnologySelection" name="textTechnology" onchange="updatePostGrid(this)" class="database-filter form-select
           block
           px-3
           py-1.5
@@ -74,14 +74,14 @@
           ease-in-out
           m-0
           focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
-          aria-labelledby="keyboardSelectionLegend">
+          aria-labelledby="textTechnologySelectionLegend">
         <option value="" selected>Any</option>
-        {# FIXME This procedure of sorting entries by keyboard name and
+        {# FIXME This procedure of sorting entries by text technology name and
         dropping duplicates could probably be sped up #}
-        {% for keyboardName, databaseEntry in collections.posts | sort(false, false, "data.keyboard") | groupby("data.keyboard")  %}
-            {# Don't list empty keyboard names (i.e. ""), sometimes used for database that can work on a vast array of different keyboards #}
-            {% if keyboardName | length > 0 -%} 
-                <option value="{{ keyboardName }}">{{ keyboardName }}</option>
+        {% for textTechnologyName, databaseEntry in collections.posts | sort(false, false, "data.textTechnology") | groupby("data.textTechnology")  %}
+            {# Don't list empty textTechnology names (i.e. ""), sometimes used for database that can work on a vast array of different text technologies #}
+            {% if textTechnologyName | length > 0 -%} 
+                <option value="{{ textTechnologyName }}">{{ textTechnologyName }}</option>
             {%- endif %}
         {% endfor %}
     </select>
@@ -187,7 +187,7 @@
     <button type="button" onclick="resetSidebarFilters(true); toggleFullScreenSidebar();" class="button float-left mt-9">Reset filters</button>
     {# The "Apply filters" button is a bit misleading in terms of how 
     it technically works. The different filters are applied as soon as
-    you make a selection (e.g. select a keyboard or a OS) so there is no
+    you make a selection (e.g. select a text technology or a binding type) so there is no
     need for an "Apply" button. However, the sidebar/filters menu is 
     shown in full-screen for mobile users so they don't see the live
     filtering of results and need a convenient way to minimise the

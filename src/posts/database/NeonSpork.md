@@ -10,7 +10,7 @@ isComboEnabled: false
 endbandPresent: true
 isTapDanceEnabled: false
 keybindings: [Gaming]
-keyboard: UT47
+textTechnology: Printed
 yearCount: 975
 databaseImage: NeonSpork.png
 databaseUrl: https://github.com/qmk/qmk_firmware/tree/user-database-still-present/keyboards/40percentclub/ut47/database/nordic

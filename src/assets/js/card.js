@@ -28,7 +28,7 @@ function card(post, postUrl) {
           src="${post.databaseImage}"
           width="960"
           height="500"
-          alt="${endbandStatus} ${post.textblockBindingRelationship}-staggered ${post.keyboard} with ${oxfordJoin(post.bindingType)} legends">
+          alt="${endbandStatus} ${post.textblockBindingRelationship}-staggered ${post.textTechnology} with ${oxfordJoin(post.bindingType)} legends">
           </a>
           <div class="px-6 py-5">
               <div class="font-semibold text-lg mb-2">
