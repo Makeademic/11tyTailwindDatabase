@@ -18,12 +18,12 @@
         "OS": ["Windows"],
         "keybindings": ["Gaming"],
         "writeup": null,
-        "hasRotaryEncoder": false,
-        "hasLetterOnThumb": false,
+        "hasUncutForeEdges": false,
+        "hasInscriptionOnBinding": false,
         "documentCount": 4,
         "hasHomeRowMods": false,
-        "isTapDanceEnabled": false,
-        "isComboEnabled": false,
+        "hasRubrication": false,
+        "hasRuling": false,
         "isAutoShiftEnabled": false
         
     },
@@ -46,12 +46,12 @@
         "OS": ["Windows"],
         "keybindings": ["Gaming"],
         "writeup": null,
-        "hasRotaryEncoder": false,
-        "hasLetterOnThumb": false,
+        "hasUncutForeEdges": true,
+        "hasInscriptionOnBinding": true,
         "documentCount": 6,
         "hasHomeRowMods": false,
-        "isTapDanceEnabled": false,
-        "isComboEnabled": false,
+        "hasRubrication": true,
+        "hasRuling": true,
         "isAutoShiftEnabled": false
         
     }
