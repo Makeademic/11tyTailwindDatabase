@@ -1,6 +1,5 @@
 ---
 title: Turtle Reading Book
-dateYYYY: 1670
 artwork: Apocalyptic Vision
 location: Palazzo Ducale
 artist: Hieronymus Bosch
@@ -18,11 +17,11 @@ endbandPresent: false
 isTapDanceEnabled: false
 keybindings: [Gaming]
 keyboard: UT47
-keyCount: 47
+yearCount: 1670
 subjects: ["religion and mythology"]
 documentCount: 4
 OS: [Windows]
 textblockBindingRelationship: Squares
 summary: "Turtle Reading Book"
-writeup: 
+writeup:
 ---
