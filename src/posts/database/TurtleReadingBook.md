@@ -9,12 +9,12 @@ author: Hieronymus Bosch
 bindingType: [Boards]
 documentFormat: [Codex]
 hasHomeRowMods: false
-hasLetterOnThumb: false
-hasRotaryEncoder: false
+hasInscriptionOnBinding: false
+hasUncutForeEdges: false
 isAutoShiftEnabled: false
-isComboEnabled: false
+hasRuling: false
 endbandPresent: false
-isTapDanceEnabled: false
+hasRubrication: false
 keybindings: [Gaming]
 textTechnology: Manuscript
 yearCount: 1670

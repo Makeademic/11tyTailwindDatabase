@@ -48,22 +48,18 @@ If there are at least four mod-taps on the home row, `hasHomeRowMods` should be 
 - true
 - false
 
-## hasLetterOnThumb (bool)
+## hasInscriptionOnBinding (bool)
 
-Indicates whether the database uses one or more letters on the thumb keys of the base layer(s).
-
-If there is at least _one_ layout in the list of available base layouts that has a letter on thumb, this option should be set to true.
+Indicates whether the binding has inscriptions
 
 ### Possible Values
 
 - true
 - false
 
-## hasRotaryEncoder (bool)
+## hasUncutForeEdges (bool)
 
-Indicates whether the database uses one or more rotary encoders.
-
-As long as the database contains rotary encoder code, regardless of whether or not the encoders are optional, this option should be set to true.
+Indicates whether it has uncut fore-edges
 
 ### Possible Values
 
@@ -81,11 +77,9 @@ Check this even if you're using auto shift only on symbols; the slightest use of
 - true
 - false
 
-## isComboEnabled (bool)
+## hasRuling (bool)
 
-Indicates whether combos are enabled and used in the database.
-
-Look for `COMBO_ENABLE` in the rules.mk file in case of a QMK firmware database. Search for the equivalent if the firmware is different.
+Indicates whether or not it has ruling
 
 ### Possible Values
 
@@ -101,9 +95,9 @@ Indicates whether or not an endband is present.
 - true
 - false
 
-## isTapDanceEnabled (bool)
+## hasRubrication (bool)
 
-Indicates whether tap dance is enabled and used in the database.
+Indicates whether or not it has rubrication
 
 ### Possible Values
 

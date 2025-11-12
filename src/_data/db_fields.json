@@ -14,11 +14,11 @@
     "OS",
     "keybindings",
     "writeup",
-    "hasRotaryEncoder",
-    "hasLetterOnThumb",
+    "hasUncutForeEdges",
+    "hasInscriptionOnBinding",
     "documentCount",
     "hasHomeRowMods",
-    "isTapDanceEnabled",
-    "isComboEnabled",
+    "hasRubrication",
+    "hasRuling",
     "isAutoShiftEnabled"
 ]

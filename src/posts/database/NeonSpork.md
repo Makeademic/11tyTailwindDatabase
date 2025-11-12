@@ -3,12 +3,12 @@ author: NeonSpork
 bindingType: ["Limp binding"]
 documentFormat: [Scroll]
 hasHomeRowMods: false
-hasLetterOnThumb: false
-hasRotaryEncoder: false
+hasInscriptionOnBinding: true
+hasUncutForeEdges: true
 isAutoShiftEnabled: false
-isComboEnabled: false
+hasRuling: true
 endbandPresent: true
-isTapDanceEnabled: false
+hasRubrication: true
 keybindings: [Gaming]
 textTechnology: Printed
 yearCount: 975

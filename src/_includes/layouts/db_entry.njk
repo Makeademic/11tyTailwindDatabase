@@ -1,9 +1,9 @@
 ---
 layout: default
 # TODO: remove those defaults
-hasRotaryEncoder: false
-isTapDanceEnabled: false
-isComboEnabled: false
+hasUncutForeEdges: false
+hasRubrication: false
+hasRuling: false
 isAutoShiftEnabled: false
 keybindings: []
 ---
@@ -64,8 +64,8 @@ keybindings: []
                 <td>{{ showCategoricalArray(bindingType, "N/A") }}</td>
             </tr>
             <tr>
-                <td>Letter(s) on thumb</td>
-                <td>{{ booleanToYesNo(hasLetterOnThumb) }}</td>
+                <td>Inscriptions on Binding</td>
+                <td>{{ booleanToYesNo(hasInscriptionOnBinding) }}</td>
             </tr>
             <th colspan="2" class="text-xl font-bold">Fore-Edges/Textblock Edges</th>
             <tr>
@@ -73,8 +73,8 @@ keybindings: []
                 <td>{{ textblockBindingRelationship | title }}</td>
             </tr>
             <tr>
-                <td>Rotary Encoder(s)</td>
-                <td>{{ booleanToYesNo(hasRotaryEncoder) }}</td>
+                <td>Uncut Fore-Edges</td>
+                <td>{{ booleanToYesNo(hasUncutForeEdges) }}</td>
             </tr>
             
             <tbody>
@@ -108,12 +108,12 @@ keybindings: []
                 <td>{{ textTechnology }}</td>
             </tr>
             <tr>
-                    <td>Combos</td>
-                    <td>{{ booleanToYesNo(isComboEnabled) }}</td>
+                    <td>Ruling</td>
+                    <td>{{ booleanToYesNo(hasRuling) }}</td>
                 </tr>
                 <tr>
-                    <td>Tap Dance</td>
-                    <td>{{ booleanToYesNo(isTapDanceEnabled) }}</td>
+                    <td>Rubrication</td>
+                    <td>{{ booleanToYesNo(hasRubrication) }}</td>
             </tr>
             <th colspan="2" class="text-xl font-bold">Text and Image</th>
             <tr>
