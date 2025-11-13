@@ -18,6 +18,6 @@ module.exports = {
     },
     description: (data) => `Get inspired by ${data.artist}'s ${data.yearCount} ${data.subjects.length > 1 ? "multilingual " : ""}${data.textTechnology} keymap and browse other ${oxfordJoin(data.documentFormat)} keymaps like this.`,
     ogImage: (data) => data.databaseImage,
-    imageAlt: (data) => `${data.endbandPresent ? "Endband Present" : "Endband Absent"} ${data.textblockBindingRelationship}-relationship ${data.textTechnology} with ${oxfordJoin(data.bindingType)} type.`
+    imageAlt: (data) => data.imageAlt
   }
 };

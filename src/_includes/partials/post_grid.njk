@@ -16,7 +16,7 @@
             src="{% if post.data.databaseImage %}{{ post.data.databaseImage | url }}{% elif post.data.image %}{{ post.data.image | url }}{% else %}{{ '/assets/img/no-image.svg' | url }}{% endif %}"
             width="960"
             height="500"
-            alt="{{ endbandStatus }} {{ post.data.textblockBindingRelationship }}-staggered {{ post.data.textTechnology }} with {{ post.data.bindingType | oxfordJoin }} legends">
+            alt="{{ post.data.imageAlt }}">
             </a>
             <div class="px-6 py-5">
                 <div class="font-semibold text-lg mb-2">

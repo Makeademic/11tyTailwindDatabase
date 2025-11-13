@@ -20,5 +20,6 @@
     "hasHomeRowMods",
     "hasRubrication",
     "hasRuling",
-    "isAutoShiftEnabled"
+    "isAutoShiftEnabled",
+    "imageAlt"
 ]

@@ -230,6 +230,15 @@ It is also possible to use [YAML arrays](https://www.w3schools.io/file/yaml-arra
 - "A combo-based layout for Ergonomic Keyboards, implemented in QMK"
 - ""
 
+## imageAlt (string or array[string])
+
+This is the alt text for the image
+
+### Possible Values
+
+- "this is an image of X."
+- ""
+
 ## title (string)
 
 The name of the database itself.

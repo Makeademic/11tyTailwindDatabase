@@ -23,4 +23,5 @@ OS: [Windows]
 textblockBindingRelationship: Squares
 summary: "Turtle Reading Book"
 writeup:
+imageAlt: "turtle wearing glasses reading a book"
 ---
