@@ -25,7 +25,7 @@ function card(post, postUrl) {
           <a href="${post.url}">
           <img
           class="w-full m-0 rounded-t lazy max-h-72 object-cover object-top card-thumbnail"
-            src="{% if databaseImage %}{{ databaseImage | url }}{% elif image %}{{ image | url }}{% else %}{{ '/assets/img/no-image.svg' | url }}{% endif %}"
+          src="${post.databaseImage | addPathPrefixToFullUrl}"
           width="960"
           height="500"
           alt="${post.imageAlt}">
