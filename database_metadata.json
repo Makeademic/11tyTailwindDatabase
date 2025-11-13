@@ -24,7 +24,8 @@
         "hasHomeRowMods": false,
         "hasRubrication": false,
         "hasRuling": false,
-        "isAutoShiftEnabled": false
+        "isAutoShiftEnabled": false,
+        "imageAlt": "turtle wearing glasses reading a book"
         
     },
     {
@@ -52,7 +53,8 @@
         "hasHomeRowMods": false,
         "hasRubrication": true,
         "hasRuling": true,
-        "isAutoShiftEnabled": false
+        "isAutoShiftEnabled": false,
+        "imageAlt": "Neon Spork image"
         
     }
 ]
