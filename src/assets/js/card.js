@@ -25,7 +25,7 @@ function card(post, postUrl) {
           <a href="${post.url}">
           <img
           class="w-full m-0 rounded-t lazy max-h-72 object-cover object-top card-thumbnail"
-          src="/11tyTailwindDatabase/${post.databaseImage}"
+          src="${pathPrefix}${post.databaseImage}"
           width="960"
           height="500"
           alt="${post.imageAlt}">
