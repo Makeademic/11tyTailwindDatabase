@@ -24,10 +24,10 @@
                 </div>
                 <div class="my-5 flex flex-wrap justify-between">
                     <p id="yearCount-table-cell-{{ post.data.fileSlug }}"   class="text-gray-700 mb-1 max-w-2/5 ">{{ post.data.yearCount }}</p>
-                    <p id="artworkName-table-cell-{{ post.data.fileSlug }}"  class="text-gray-700 mb-1 max-w-3/5 break-words text-right">{{ showCategoricalArray(post.data.artworkName, "N/A") }}</p>
+                    <p id="artworkName-table-cell-{{ post.data.fileSlug }}"  class="text-gray-700 mb-1 max-w-3/5 break-words text-right">{{ post.data.artworkName }}</p>
                     <div class="flexitems-break"></div>
                     <p id="creatorName-table-cell-{{ post.data.fileSlug }}" class="text-gray-700 mb-1 max-w-2/5">{{ post.data.creatorName }}</p>
-                    <p id="repositoryName-table-cell-{{ post.data.fileSlug }}"  class="text-gray-700 mb-1 max-w-3/5 break-words text-right">{{ showCategoricalArray(post.data.repositoryName, "N/A") }}</p>
+                    <p id="repositoryName-table-cell-{{ post.data.fileSlug }}"  class="text-gray-700 mb-1 max-w-3/5 break-words text-right">{{ post.data.repositoryName }}</p>
                 </div>
                 {% if post.data.summary -%}
                     {% if post.data.summary | isArray %}
