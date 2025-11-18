@@ -1,7 +1,7 @@
 [
     "title",
     "databaseUrl",
-    "artist",
+    "creatorName",
     "databaseImage",
     "yearCount",
     "documentFormat",

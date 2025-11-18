@@ -1,5 +1,5 @@
 ---
-artist: NeonSpork
+creatorName: NeonSpork
 bindingType: ["Limp binding"]
 documentFormat: [Scroll]
 hasHomeRowMods: false

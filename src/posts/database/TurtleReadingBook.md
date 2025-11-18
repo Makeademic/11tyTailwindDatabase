@@ -2,7 +2,7 @@
 title: Turtle Reading Book
 artwork: Apocalyptic Vision
 location: Palazzo Ducale
-artist: Hieronymus Bosch
+creatorName: Hieronymus Bosch
 databaseImage: TurtleReadingBook.jpg
 databaseUrl: https://basira.library.upenn.edu/documents/3536
 bindingType: [Boards]

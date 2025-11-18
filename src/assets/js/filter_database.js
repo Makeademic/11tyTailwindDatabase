@@ -26,7 +26,7 @@ function isdatabaseConforming(query, databaseData) {
         // databaseData["summary"] might be null so that's why we use
         // AND's short-circuit evaluation to check for null before accessing
         // the toLowerCase property. It might also be an array of strings instead.
-        let isConformingToTypedSearch = (word) => ["title", "artist", "summary"]
+        let isConformingToTypedSearch = (word) => ["title", "creatorName", "summary"]
             .map(fieldN => databaseData[fieldN] && String(databaseData[fieldN]).toLowerCase().indexOf(word.toLowerCase()) !== -1)
             .some(Boolean);
         if (!value.split(" ").every(isConformingToTypedSearch)) {

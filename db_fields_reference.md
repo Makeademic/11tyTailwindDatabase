@@ -1,12 +1,12 @@
-## artist (string)
+## creatorName (string)
 
-The name of the artist
+The name of the creator
 
 ### Possible Values
 
-- dustypomerleau
-- "alvaro-prieto"
-- Makeademic
+- Unknown - Germany
+- Master of the Dresden Prayerbook
+- Filippino Lippi
 
 ## bindingType (array[categorical])
 

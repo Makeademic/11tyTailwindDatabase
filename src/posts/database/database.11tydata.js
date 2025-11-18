@@ -16,7 +16,7 @@ module.exports = {
         return false;
       }
     },
-    description: (data) => `Get inspired by ${data.artist}'s ${data.yearCount} ${data.subjects.length > 1 ? "multilingual " : ""}${data.textTechnology} keymap and browse other ${oxfordJoin(data.documentFormat)} keymaps like this.`,
+    description: (data) => `Get inspired by ${data.creatorName}'s ${data.yearCount} ${data.subjects.length > 1 ? "multilingual " : ""}${data.textTechnology} keymap and browse other ${oxfordJoin(data.documentFormat)} keymaps like this.`,
     ogImage: (data) => data.databaseImage,
     imageAlt: (data) => data.imageAlt
   }
