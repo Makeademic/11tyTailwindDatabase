@@ -6,18 +6,18 @@ module.exports = {
   layout: "layouts/db_entry.njk",
   eleventyComputed: {
     permalink: (data) => `database/${data.page.fileSlug}/index.html`,
-    databaseImage: (data) => {
-      if (data.databaseImage) {
-        if (data.databaseImage.search(/^https?:\/\//) !== -1) {
-          return data.databaseImage.replace("http:", "https:");
+    documentImage: (data) => {
+      if (data.documentImage) {
+        if (data.documentImage.search(/^https?:\/\//) !== -1) {
+          return data.documentImage.replace("http:", "https:");
         }
-        return `/assets/img/database/${data.databaseImage}`;
+        return `/assets/img/documents/${data.documentImage}`;
       } else {
         return false;
       }
     },
     description: (data) => `Get inspired by ${data.creatorName}'s ${data.yearCount} ${data.subjects.length > 1 ? "multilingual " : ""}${data.textTechnology} keymap and browse other ${oxfordJoin(data.documentFormat)} keymaps like this.`,
-    ogImage: (data) => data.databaseImage,
+    ogImage: (data) => data.documentImage,
     imageAlt: (data) => data.imageAlt
   }
 };

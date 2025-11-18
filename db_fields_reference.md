@@ -162,11 +162,11 @@ The date in YYYY years
 - 102
 - 1780
 
-## databaseImage (string)
+## documentImage (string)
 
 Link to a visual representation of the database in question.
 
-In most cases, this should be an externally hosted image but hosting the database image directly in the repo at `src/assets/img/database/` may be considered.
+In most cases, this should be an externally hosted image but hosting the database image directly in the repo at `src/assets/img/documents/` may be considered.
 
 For best results, make sure to use a big font size for legends and high contrast. When displaying a split database, minimise the horizontal distance between the two halves. Good examples include [Pnohty](https://db.com/database/rayduck/), [datagrok's layout for the Mitosis](https://db.com/database/datagrok/), [alterecco's Ahokore](https://db.com/database/alterecco-zmk/), and [Seniply](https://db.com/database/stevep99/). In particular, avoid screenshots of ASCII art. They aren't very pretty and are unreadable from the home page.
 

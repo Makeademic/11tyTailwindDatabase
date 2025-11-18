@@ -9,18 +9,18 @@ dist folder (grayed out)
 lib folder has collections, filters, and transforms
 node_modules (grayed out)
 src folder has
-_data has
+\_data has
 db_fields.json has all of the database fields
 maintainer.json (can we delete this?)
 menu.json has About and GitHub links for menu
 process.js has module.export
 site.js has title, description, keywords, paginate, and link to logo
 
-_includes has
+\_includes has
 
 icons folder has 3 svgs
-layouts folder has 
-default.njk  has default HTML
+layouts folder has
+default.njk has default HTML
 db_entry.njk creates HTML for each database entry
 
 macros folder has
@@ -35,7 +35,7 @@ header.njk has logo, nav menu, search, menu toggle at small size
 database_metadata.json.njk has database metadata
 paginator.njk has previous and next buttons
 post_grid.njk has postcard content and styling
-sidebar.njk has all of the data fieldsets 
+sidebar.njk has all of the data fieldsets
 
 assets has
 css has
@@ -44,8 +44,8 @@ main.css
 mouislider.css
 
 img has
-database has
-most of the database images (.png)
+documents has
+most of the document images (.png)
 
 apple-touch-icon.png
 cover.png
@@ -76,7 +76,7 @@ robots.txt.njk
 sitemap.xml.njk
 
 posts has
-database has 
+database has
 all the markdown files have database fields : values
 
 404.njk has page not found message
@@ -90,5 +90,3 @@ db_fields_reference.md has all the data fields
 package-lock.json has name, version, devDependencies, node_modules, etc.
 package.json has scripts and dependencies
 tailwind.config.js has theme sizes, colors, styles, etc.
-
-

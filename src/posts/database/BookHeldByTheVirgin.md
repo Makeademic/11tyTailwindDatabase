@@ -3,7 +3,7 @@ title: Book held by the Virgin
 artworkName: The Triumph of Eternity
 repositoryName: The Cleveland Museum of Art
 creatorName: Unknown - France
-databaseImage: 4371-BookHeldByTheVirgin.png
+documentImage: 4371-BookHeldByTheVirgin.png
 databaseUrl: https://basira.library.upenn.edu/documents/4371
 bindingType: [Boards, Chemise]
 documentFormat: [Codex]

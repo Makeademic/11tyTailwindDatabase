@@ -14,7 +14,7 @@ hasRubrication: true
 keybindings: [Gaming]
 textTechnology: Printed
 yearCount: 975
-databaseImage: NeonSpork.png
+documentImage: NeonSpork.png
 databaseUrl: https://github.com/qmk/qmk_firmware/tree/user-database-still-present/keyboards/40percentclub/ut47/database/nordic
 subjects: ["allegory", "still life"]
 documentCount: 6
