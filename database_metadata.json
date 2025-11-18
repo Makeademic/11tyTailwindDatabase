@@ -1,6 +1,37 @@
 [
     {
 
+        "url": "/11tyTailwindDatabase/database/BookHeldByTheVirgin/",
+        "fileSlug": "BookHeldByTheVirgin",
+        "title": "Book held by the Virgin",
+        "databaseUrl": "https://basira.library.upenn.edu/documents/4371",
+        "creatorName": "Unknown - France",
+        "databaseImage": "/assets/img/database/4371-BookHeldByTheVirgin.png",
+        "yearCount": 1515,
+        "documentFormat": ["Codex"],
+        "textTechnology": "Manuscript",
+        "bindingType": ["Boards","Chemise"],
+        "textblockBindingRelationship": "Squares",
+        "endbandPresent": false,
+        "subjects": ["allegory","religion and mythology"],
+        "summary": "Unknown religious book: sacred context",
+        "OS": ["Windows"],
+        "keybindings": ["Gaming"],
+        "writeup": null,
+        "hasUncutForeEdges": false,
+        "hasInscriptionOnBinding": false,
+        "documentCount": 2,
+        "hasHomeRowMods": false,
+        "hasRubrication": true,
+        "hasRuling": true,
+        "isAutoShiftEnabled": false,
+        "imageAlt": "close up of gauffered gilded chemise binding manuscript open to page spread with illuminated initials, botanical floral borders, and simulated script",
+        "artworkName": "The Triumph of Eternity",
+        "repositoryName": "The Cleveland Museum of Art"
+        
+    },
+    {
+
         "url": "/11tyTailwindDatabase/database/TurtleReadingBook/",
         "fileSlug": "TurtleReadingBook",
         "title": "Turtle Reading Book",
