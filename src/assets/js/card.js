@@ -38,7 +38,7 @@ function card(post, postUrl) {
                   <p id="yearCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.yearCount} year</p>
                   <p id="subjects-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.subjects.join(", ") || "N/A"}</p>
                   <div class="flexitems-break"></div>
-                  <p id="documentCount-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.documentCount} documents</p>
+                  <p id="creatorName-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-2/5">${post.creatorName}</p>
                   <p id="bindingType-table-cell-${post.fileSlug}" class="text-gray-700 mb-1 max-w-3/5 break-words text-right">${post.bindingType.join(", ") || "N/A"}</p>
               </div>
               ${summary}

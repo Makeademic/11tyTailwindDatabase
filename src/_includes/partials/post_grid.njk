@@ -26,7 +26,7 @@
                     <p id="yearCount-table-cell-{{ post.data.fileSlug }}"   class="text-gray-700 mb-1 max-w-2/5 ">{{ post.data.yearCount }} year</p>
                     <p id="subjects-table-cell-{{ post.data.fileSlug }}"  class="text-gray-700 mb-1 max-w-3/5 break-words text-right">{{ showCategoricalArray(post.data.subjects, "N/A") }}</p>
                     <div class="flexitems-break"></div>
-                    <p id="documentCount-table-cell-{{ post.data.documentCount }}" class="text-gray-700 mb-1 max-w-2/5">{{ post.data.documentCount }} documents</p>
+                    <p id="creatorName-table-cell-{{ post.data.fileSlug }}" class="text-gray-700 mb-1 max-w-2/5">{{ post.data.creatorName }}</p>
                     <p id="bindingType-table-cell-{{ post.data.fileSlug }}"  class="text-gray-700 mb-1 max-w-3/5 break-words text-right">{{ showCategoricalArray(post.data.bindingType, "N/A") }}</p>
                 </div>
                 {% if post.data.summary -%}
