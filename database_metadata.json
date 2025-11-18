@@ -32,37 +32,6 @@
     },
     {
 
-        "url": "/11tyTailwindDatabase/database/ScrollHeldByJohnTheBaptist/",
-        "fileSlug": "ScrollHeldByJohnTheBaptist",
-        "title": "Scroll held by John the Baptist",
-        "databaseUrl": "https://github.com/qmk/qmk_firmware/tree/user-database-still-present/keyboards/40percentclub/ut47/database/nordic",
-        "creatorName": "Unknown - Byzantine",
-        "documentImage": "/assets/img/documents/3854ScrollHeldByJohnTheBaptist.jpeg",
-        "yearCount": 1425,
-        "documentFormat": ["Scroll/Roll"],
-        "textTechnology": "Manuscript",
-        "bindingType": ,
-        "textblockBindingRelationship": ,
-        "endbandPresent": false,
-        "subjects": ["religion and mythology"],
-        "summary": "Gothic scroll reading 'Ecce agnus Dei, ecce qui tollit peccata mundi' ",
-        "OS": ["Windows"],
-        "keybindings": ["Gaming"],
-        "writeup": null,
-        "hasUncutForeEdges": true,
-        "hasInscriptionOnBinding": false,
-        "documentCount": 5,
-        "hasHomeRowMods": false,
-        "hasRubrication": false,
-        "hasRuling": true,
-        "isAutoShiftEnabled": false,
-        "imageAlt": "closeup of scroll held by John the Baptist",
-        "artworkName": "Virgin and Child with Saints Christopher, Augustine, John the Baptist, Stephen, Nicholas, and Sebastian",
-        "repositoryName": "Museum of Fine Arts, Boston"
-        
-    },
-    {
-
         "url": "/11tyTailwindDatabase/database/TurtleReadingBook/",
         "fileSlug": "TurtleReadingBook",
         "title": "Turtle Reading Book",
