@@ -8,6 +8,26 @@ The name of the creator
 - Master of the Dresden Prayerbook
 - Filippino Lippi
 
+## repositoryName (string)
+
+The name of the repository that the artwork is stored in
+
+### Possible Values
+
+- The Metropolitan Museum of Art
+- Galleria degli Uffizi
+- The Getty Museum
+
+## artworkName (string)
+
+The name of the artwork
+
+### Possible Values
+
+- Apocalyptic Vision
+- Saint Jerome in His Study
+- Portrait of Pieter Gillis
+
 ## bindingType (array[categorical])
 
 An array of all the binding types.

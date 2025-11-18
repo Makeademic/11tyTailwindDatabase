@@ -1,5 +1,7 @@
 ---
 creatorName: NeonSpork
+artworkName: Portrait of a Keyboard
+repositoryName: The Metropolitan Museum of Art
 bindingType: ["Limp binding"]
 documentFormat: [Scroll]
 hasHomeRowMods: false
