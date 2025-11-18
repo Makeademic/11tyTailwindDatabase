@@ -25,8 +25,7 @@
         "hasRubrication": false,
         "hasRuling": false,
         "isAutoShiftEnabled": false,
-        "imageAlt": "turtle wearing glasses reading a book",
-        "repositoryName": "Palazzo Ducale"
+        "imageAlt": "turtle wearing glasses reading a book"
         
     },
     {
@@ -55,8 +54,7 @@
         "hasRubrication": true,
         "hasRuling": true,
         "isAutoShiftEnabled": false,
-        "imageAlt": "Neon Spork image",
-        "repositoryName": "The Walters Art Museum"
+        "imageAlt": "Neon Spork image"
         
     }
 ]
